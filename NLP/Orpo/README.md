@@ -107,6 +107,12 @@ Specifically,
 
 일단은 2번과 같이 이해하고 문의 메일을 보내놓은 상태.
 
+> 문의 결과:<br>1. 
+분모의 1-P(y|x) 값은 likelihood P(y|x) 값이 <u>**크면 클 수록**</u> gradient를 증폭시킨다.
+원문은 수정 될 예정이라고 함.
+
+1-P(y|x) 로 인해, 학습 후반에 chosen response에 대한 adaptation을 증폭하는 동시에,
+rejected response에 대한 log prob이 과도하게 낮아지는 것을 방지함.
 
 ### 5.1 Training config
 Y_w=y_l 이거나 y_w, y_l 둘 중 하나가 없는 데이터는 필터링으로 제거.
