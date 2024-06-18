@@ -53,10 +53,10 @@ odds ratio는 x 다음에 y가 나올 확률이 그렇지 않을 확률의 몇 �
 
 직관적으로, 모델이 x를 입력받았을 때, 나와야 하는 답변의 확률이 그렇지 않은 답변의 확률의 몇 배인지를 계산.
 
-![loss orpo](image-5.png)
+![loss orpo](image-5.png)<br>
 L_SFT - 전통적인 손실 함수<br>
 선호 답변을 따라가도록 유도하는 손실함수 <br><br> 
-![loss or](image-6.png)
+![loss or](image-6.png)<br>
 L_OR - odds ratio를 기반으로 한 손실 함수<br>
 chosen과 reject 사이의 차이를 크게 하는 것이 목적인 손실함수<br><br>
 *음의 로그, 시그모이드를 적용해 L_or을 최소화 하는 방식으로 학습*
@@ -128,6 +128,7 @@ Y_w=y_l 이거나 y_w, y_l 둘 중 하나가 없는 데이터는 필터링으로
 
 > MT-Bench: GPT-4를 사용하여 모델이 멀티턴 대화에서 지시에 따른 답변을 얼마나 잘 따르는지 평가
 
+
 ### 6.1 Single-turn instruction following
 
 ![Single-turn instruction following](image-9.png)
@@ -162,6 +163,7 @@ Orpo 모델의 win rate가 높지만, 파라미터가 적은 모델에 대해선
 >i번째 입력을 모델에 넣었을 때 생성된 첫번 째 샘플만을 선택하여 얻은 합집합의 다양성.
 
 ![pid and aid](image-13.png)
+
 sft + dpo와 비교했을 때,
 Orpo는 단일 입력에 여러 답변을 샘플링 했을 때, 더 적은 어휘를 가지고 답변하지만
 다양한 입력이 들어오는 상황에서는 더 많은 어휘를 사용한다.
@@ -209,10 +211,12 @@ Rlhf나 dpo의 경우 두 개의 모델에 대해 chosen, rejected 답변애 대
 
 #### E.1Log Probability
 ![lambda and log prob](image-16.png)
+
 뭐가 낫다고 할 순 없지만, Rejected 답변을 피하는 데에 중점을 두고 싶다면 람다를 키워라.
 
 #### E.2MT-Bench
 ![MT-bench](image-17.png)
+
 람다값이 크면 추출, 수학, 추론과 같이 일반적으로 결정적인 대답이 필요한 분야에서 성능 저하.<br>
 즉, 결정적인 대답이 요구되는 문제에서는 성능 저하 이슈.
 
@@ -220,5 +224,6 @@ Rlhf나 dpo의 경우 두 개의 모델에 대해 chosen, rejected 답변애 대
 
 ### Appendix H Special Instructions for Verbosity Assessment
 ![alpacaEval](image-18.png)
+
 AlpacaEval에 사용하기 위해 chatgpt에 던졌던 prompt.<br> 
 추후 alpacaEval을 확인할 때 자세히 보기로.
