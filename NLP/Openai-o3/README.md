@@ -22,7 +22,7 @@ o3(no 전략, no 제약 완화): 금메달<br>
 [3. Openai o1-ioi](#3-openai-o1-ioi)<br>
 - [3.1 Coding RL fine-tuning](#31-coding-rl-fine-tuning)<br>
 - [3.2 o1-ioi test-time strategy](#32-o1-ioi-test-time-strategy)<br>
-- [3.3 CodeForces Benchmark](#33-codeforces-benckmark)<br>
+- [3.3 CodeForces Benchmark](#33-codeforces-benchmark)<br>
 - [3.4 IOI 2024 Live Competition](#34-ioi-2024-live-competition)<br>
 
 [4. OpenAI o3](#4-openai-o3)<br>
@@ -30,7 +30,7 @@ o3(no 전략, no 제약 완화): 금메달<br>
 - [4.2 IOI 2024 Benchmark](#42-ioi-2024-benchmark)<br>
 
 [5. Software Engineering Evaluations](#5-software-engineering-evaluations)<br>
-- [5.1 HackerRank Astra](#51-hackerank-astra)<br>
+- [5.1 HackerRank Astra](#51-hackerrank-astra)<br>
 - [5.2 SWE-Bench Verified](#52-swe-bench-verified)<br>
 
 [6. Conclusion](#6-conclusion)<br>
